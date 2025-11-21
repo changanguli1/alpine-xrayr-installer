@@ -184,7 +184,7 @@ EOF
 chmod +x "$XRAYR_SERVICE"
 
 # 加入开机自启
-if command -v rc-update >/div/null 2>&1; then
+if command -v rc-update >/dev/null 2>&1; then
   log "将 XrayR 加入 OpenRC 开机自启..."
   rc-update add XrayR default >/dev/null 2>&1 || true
 else
